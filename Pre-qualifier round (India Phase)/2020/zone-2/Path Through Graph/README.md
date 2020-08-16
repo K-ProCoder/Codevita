@@ -6,21 +6,21 @@
 - If the two numbers do not have any common factor, then construct a path through 1. For better understanding refer to the examples below:
 
 **Example 1:**\
-**Input numbers:** 2 4\
+**Input numbers:** 2 4
 - The numbers are directly connected as follows on the graph. 2 is the largest factor of 4, other than itself.
-We can also see that there is only on edge between them.\
-- 4 <--> 2\
+We can also see that there is only on edge between them.
+- 4 <--> 2
 - Hence the number of edges in shortest path is 1.\
 **Output**: 1
 
 **Example 2:**\
-**Input numbers:** 18 19\
-- The graph for number 18 and 19 will look like this. Here we have 4 edges in the path.\
+**Input numbers:** 18 19
+- The graph for number 18 and 19 will look like this. Here we have 4 edges in the path.
 - 18 <--> 9 <--> 3 <--> 1 <--> 19\
 **Output:** 4
 
 **Example 3:**\
-**Input numbers:** 9 9\
+**Input numbers:** 9 9
 - The number of edges in shortest path is zero since the numbers correspond to the same node.\
 **Output:** 0
 
@@ -90,7 +90,7 @@ Number of edges in the shortest path.
 
 <h2 align='center'>Solutions</h2>
 
-####Python
+#### Python
 ```python
 from collections import defaultdict
 def greatest_divisor_n(n):
@@ -128,7 +128,7 @@ var1,var2=map(int,input().split())
 print(path_of_graph(var1,var2))
 
 ```
-####C++
+#### C++
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
